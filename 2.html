@@ -1,0 +1,19 @@
+<script>
+	function usernameValidity(username){
+		var Regex = /^[a-z]{5}[a-z_.]{3,7}$/i ;
+		return Regex.test(username)
+    };
+    function passwordValidity(password){
+        var Regex = /^[a-z]{3}[a-z0-9]{2,6}$/i;
+        return Regex.test(password)
+    };
+	
+	
+	if (usernameValidity("fajar_alhami") == true) {
+		alert("Username and Password is Valid") ;
+	} else if (passwordValidity("faj4ral") == true) {
+		alert("Username and Password is Valid");
+    } else {
+        alert("Username and Password Invalid")
+    };
+</script>
